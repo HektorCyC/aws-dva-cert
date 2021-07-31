@@ -1,7 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-
+import { baseURL } from './environments/environment.js'
 function App() {
+
+
   return (
     <div className="App">
       <header className="App-header">
@@ -11,14 +13,14 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href={`${baseURL}/ejemplo`}
           target="_blank"
           rel="noopener noreferrer"
         >
           Learn React
         </a>
       </header>
-    </div>
+    </div >
   );
 }
 
