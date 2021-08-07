@@ -24,5 +24,11 @@
         }
       }
     }
+  },
+  "storage": {
+    "tecguruassets": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation"
+    }
   }
 }
