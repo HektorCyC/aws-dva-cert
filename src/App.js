@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import { baseURL } from './environments/environment.js'
+import { withAuthenticator, AmplifySignOut} from '@aws-amplify/ui-react';
+
 function App() {
 
 
@@ -13,15 +14,16 @@ function App() {
         </p>
         <a
           className="App-link"
-          href={`${baseURL}/ejemplo`}
+          href={`ejemplo`}
           target="_blank"
           rel="noopener noreferrer"
         >
           Learn React
         </a>
+        <AmplifySignOut/>
       </header>
     </div >
   );
 }
 
-export default App;
+export default withAuthenticator(App);

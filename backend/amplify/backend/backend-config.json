@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "awsdvacert7027da3e": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
